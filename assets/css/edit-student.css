@@ -7,6 +7,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  line-height: 1.4;
 }
 body {
   background-color: #f7f7fa;
@@ -35,6 +36,8 @@ body {
   margin-top: 30px;
 }
 .form-group {
+  display: flex;
+  flex-direction: column;
 }
 .form-control {
   border: 1px solid #ddd;
@@ -43,7 +46,8 @@ body {
   height: 45px;
   padding: 6px 12px;
   border-radius: 4px;
-  width: 100%;
+  width: 440px;
+  background-color: var(--same-white);
 }
 .form-control-not-width {
   border: 1px solid #ddd;
@@ -57,6 +61,7 @@ body {
   border-color: var(--primary-color);
   box-shadow: none;
   outline: 0 none;
+  background-color: white;
 }
 .search-student-btn {
   padding: 0px 0px 0px 12px;
@@ -98,7 +103,7 @@ body {
   background-color: white;
   margin-top: 30px;
   border-radius: 8px;
-  height: 1200px;
+  height: max-content;
 }
 .card-table {
   display: flex;
@@ -137,7 +142,7 @@ body {
 .row {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
+  flex-direction: row;
 }
 
 .submit-form {
@@ -152,7 +157,7 @@ body {
   color: red;
 }
 .student-image .form-group {
-  margin-top: 40px;
+  margin-top: 10px;
   font-weight: 600;
   margin-left: 20px;
 }
@@ -167,4 +172,35 @@ body {
 .student-image-submit .image-submit {
   margin-top: 20px;
   margin-left: 20px;
+}
+.student-image img {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+}
+.student-image label:fis {
+  font-weight: 600;
+  font-size: 15px;
+  margin-left: 20px;
+}
+.student-image .form-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.upload label {
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 6px 30px;
+  background-color: var(--primary-color);
+  height: 45px;
+  border: 1px solid var(--primary-color);
+  border-radius: 4px;
+  color: white;
+}
+.upload label:hover {
+  cursor: pointer;
+  background-color: var(--foreign-color);
+  border: 1px solid var(--foreign-color);
 }

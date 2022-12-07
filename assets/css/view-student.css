@@ -7,6 +7,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  line-height: 1.4;
 }
 body {
   background-color: #f7f7fa;
@@ -94,11 +95,11 @@ body {
   border: 1px solid var(--foreign-color);
 }
 /* Student-form */
-.student-form {
+.student-form-view {
   background-color: white;
   margin-top: 30px;
   border-radius: 8px;
-  height: 1200px;
+  height: max-content;
 }
 .card-table {
   display: flex;
@@ -134,10 +135,9 @@ body {
 }
 
 /* Edit form */
-.row {
+.row-user {
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
+  flex-direction: row;
 }
 
 .submit-form {
@@ -167,4 +167,101 @@ body {
 .student-image-submit .image-submit {
   margin-top: 20px;
   margin-left: 20px;
+}
+
+.profile-bg-img img {
+  width: 100%;
+  border-radius: 10px;
+  vertical-align: middle;
+}
+.profile-user-img {
+  display: flex;
+  align-items: center;
+}
+.profile-user-img img {
+  border-radius: 50%;
+  border: 8px solid #fff;
+  width: 150px;
+  margin-left: 30px;
+  margin-bottom: 18px;
+}
+
+.profile-user {
+  display: flex;
+  flex-direction: row;
+  height: 200px;
+}
+
+.student-profile-head {
+  background-color: var(--same-white);
+  border-radius: 10px;
+}
+.user-name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 40px;
+}
+.user-name h4 {
+  font-size: 18px;
+  margin: 0px 0px 3px;
+}
+.user-name h5 {
+  font-size: 14px;
+  color: #9e9e9e;
+}
+
+.card-user {
+  border-radius: 10px;
+  border: 2px solid var(--same-white);
+  margin-top: 30px;
+}
+.card-body-user {
+  margin: 30px 20px 30px 20px;
+}
+.heading-detail h4 {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+.personal-activity {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+}
+.personal-icon {
+  color: var(--primary-color);
+  font-size: 15px;
+}
+.personal-icon i {
+  width: 10px;
+  margin-right: 15px;
+}
+.view-personal h4 {
+  font-size: 16px;
+}
+.view-personal h5 {
+  font-size: 14px;
+  color: #808080;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+.user-about {
+  margin-left: 30px;
+}
+.user-paragraph h5 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.user-paragraph p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #828282;
+  margin-bottom: 20px;
+}
+.educate-year h6 {
+  font-size: 13px;
+  font-weight: 400;
+  color: #000000;
 }
